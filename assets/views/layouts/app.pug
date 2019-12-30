@@ -14,10 +14,44 @@ html(lang="en")
     link(rel='icon', type='image/png', sizes='16x16', href='/img/iconsfavicon-16x16.png')
     link(rel='mask-icon', href='/img/icons/safari-pinned-tab.svg', color='#5bbad5')
     link(rel="manifest", href="/manifest.json")
+    
+
     link(rel='stylesheet', href='/css/styles.css')
-    link(rel='stylesheet', href='/css/styles.css')
+    link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
     
     
     script(async='', defer='', src='https://buttons.github.io/buttons.js')
   body
+    header
+      .logo-area
+        a(href='index.html') Logo
+      .menu
+        ul
+          li
+            a(href='chloe.html') Chloe
+          li
+            a(href='/') Home
+          li
+            a(href='/about') About
+      .icon-links
+        ul.quick-options
+          li
+            a(href='home.html')
+              i.fa.fa-users
+          li
+            a(href='home.html')
+              i.fa.fa-comments
+          li
+            a(href='home.html')
+              i.fa.fa-bell
+        .privacy
+          i.fa.fa-lock
+      .search-area
+        ul
+          li
+            i.fa.fa-search
+          li
+            input(type='text')
+          li
+            i.fa.fa-times
     block content
